@@ -9,6 +9,10 @@ import plotly.graph_objects as go
 import numpy as np
 import matplotlib.pyplot as plt
 
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+
 template='plotly_white'
 
 # 그래프1
@@ -198,9 +202,7 @@ def select_graph(value):
     elif value == 'graph10':
         return fig9
 
-app = dash.Dash(__name__, meta_tags=[{"name": "viewport",
-                                      "content": "width=device-width"}])
 server = app.server
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
