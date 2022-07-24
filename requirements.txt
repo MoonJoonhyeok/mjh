@@ -1,4 +1,4 @@
-dash==2.0.0d
+dash==2.0.0
 ash-core-components==2.0.0
 dash-html-components==2.0.0
 gunicorn==20.1.0
