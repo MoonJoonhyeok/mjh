@@ -1,4 +1,4 @@
-worker: python mjh.py
+web: gunicorn app:server
 import pandas as pd
 import plotly.express as px
 import dash
